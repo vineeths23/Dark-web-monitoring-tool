@@ -18,24 +18,6 @@ dark-web-monitoring/
 │── reports/              # Save reports for analysis
 │── dashboard/            # Optional: Web UI to display alerts
 │── README.md             # Project documentation
-
-
-## Features
-- Connects to the Tor network using a SOCKS5 proxy.
-- Scrapes specified .onion sites for sensitive data.
-- Logs findings and errors for review.
-- Configurable list of target websites.
-
-## Installation
-### Prerequisites
-- Python 3.7+
-- Tor installed and running (with SOCKS5 proxy enabled on port 9050)
-
-### Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/dark-web-monitoring-tool.git
-   cd dark-web-monitoring-tool
    ```
 2. Install dependencies:
    ```bash
