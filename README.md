@@ -4,19 +4,21 @@ This tool scans the dark web for potential leaks of sensitive information. It co
 
 ## Project Structure
 ```
- dark-web-monitoring-tool/
- ├── dark_web_monitoring/
- │   ├── __init__.py
- │   ├── main.py           # Main script to start scanning
- │   ├── scraper.py        # Module responsible for web scraping
- │   ├── config.py         # Configuration settings (Tor proxy, URLs, etc.)
- │   ├── utils.py          # Utility functions (logging, parsing, etc.)
- │   ├── requirements.txt  # Dependencies list
- ├── logs/                 # Logs for scanning sessions
- ├── README.md             # Documentation (this file)
- ├── requirements.txt      # List of required Python packages
- ├── .gitignore            # Git ignore file
-```
+dark-web-monitoring/
+│── .env                  # Store sensitive credentials (API keys, email passwords)
+│── config.py             # Configuration settings (Tor, email, database, etc.)
+│── main.py               # Main script to monitor dark web
+│── scraper.py            # Handles web scraping using Tor
+│── search.py             # Extracts and analyzes sensitive data
+│── alert.py              # Sends email notifications if leaks are detected
+│── database.py           # Stores found data in SQLite/MongoDB
+│── requirements.txt      # Dependencies for the project
+│── logs/                 # Log files for tracking scans
+│── data/                 # JSON/DB storage for found leaks
+│── reports/              # Save reports for analysis
+│── dashboard/            # Optional: Web UI to display alerts
+│── README.md             # Project documentation
+
 
 ## Features
 - Connects to the Tor network using a SOCKS5 proxy.
