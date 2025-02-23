@@ -1,0 +1,6 @@
+requests
+stem
+beautifulsoup4
+lxml
+python-dotenv
+
